@@ -11,13 +11,7 @@
       "description": "Put the session-id here.",
       "required": true,
       "value": ""
-    },  
-    
-    "STICKER_NAME": {
-      "description": "type your sticker pack name.",
-      "required": false,
-      "value": "KHAN-MD"
-    }, 
+    },
       
     "PREFIX": {
       "description": "paste your bot prefix note! Don't apply null prefix.",
@@ -35,21 +29,21 @@
     "OWNER_NUMBER": {
       "description": "put the owner number for bot.",
       "required": false,
-      "value": "92310344XXXX"
+      "value": "93744215959"
 
     },
 
     "ANTI_LINK": {
       "description": "Make it true if you want bot auto remove group link.",
       "required": true,
-      "value": "true"
+      "value": "false"
       
     },
 
     "WELCOME": {
       "description": "make it true if want goodbye and welcome message in groups.",
       "required": false,
-      "value": "true"
+      "value": "false"
     }
 
 },

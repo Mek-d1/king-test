@@ -44,7 +44,7 @@ const {
   const path = require('path')
   const prefix = config.PREFIX
   
-  const ownerNumber = ['93744215959']
+  const ownerNumber = ['923427582273']
   
   const tempDir = path.join(os.tmpdir(), 'cache-temp')
   if (!fs.existsSync(tempDir)) {
@@ -68,7 +68,7 @@ const {
   //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-const sessdata = config.SESSION_ID.replace("BEN-BOT~", '');
+const sessdata = config.SESSION_ID.replace("BEN-MD~", '');
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
@@ -113,10 +113,25 @@ const port = process.env.PORT || 9090;
   console.log('Plugins installed successful ✅')
   console.log('Bot connected to whatsapp ✅')
   
-  let up = `*Hello there BEN-BOT User! \ud83d\udc4b\ud83c\udffb* \n\n> Simple , Straight Forward But Loaded With Features \ud83c\udf8a, Meet BEN-BOT WhatsApp Bot.\n\n *Thanks for using BEN-BOT \ud83d\udea9* \n\n> Join WhatsApp Channel :- ⤵️\n \https://whatsapp.com/channel/0029Vasu3qP9RZAUkVkvSv32\n\n- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\nhttps://github.com/NOTHING-MD420/king-test\n\n> © Powered BY JawadTechX \ud83d\udda4`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/7zfdcq.jpg` }, caption: up })
-  }
-  })
+  let up = `
+╭─────────────━┈⊷
+│🌟 *ʙᴏᴛ ɪs ᴄᴏɴɴᴇᴄᴛᴇᴅ*
+╰─────────────━┈⊷
+│💫 ᴘʀᴇғɪx: *[ ${prefix} ]*
+│⭕ ᴍᴏᴅᴇ: *ᴘᴜʙʟɪᴄ*
+│📍 ᴠᴇʀꜱɪᴏɴ: *2.0.0*
+│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *ʙᴇɴ-ʙᴏᴛ*
+│👨‍💻 ᴏᴡɴᴇʀ : *ɴᴏᴛʜɪɴɢ*
+╰─────────────━┈⊷
+
+*Join Whatsapp Channel For Updates*
+> https://whatsapp.com/channel/0029Vasu3qP9RZAUkVkvSv32
+  `;
+
+  conn.sendMessage(conn.user.id, {
+    image: { url: 'https://files.catbox.moe/y9ysty.jpg' },
+    caption: up
+  });
   conn.ev.on('creds.update', saveCreds)
 
   //==============================
@@ -728,7 +743,7 @@ if (!isReact && config.CUSTOM_REACT === 'true') {
                         global.email
                     }\nitem2.X-ABLabel:GitHub\nitem3.URL:https://github.com/${
                         global.github
-                    }/ben-bot\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${
+                    }/khan-xmd\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${
                         global.location
                     };;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
                 });
@@ -769,7 +784,7 @@ if (!isReact && config.CUSTOM_REACT === 'true') {
   }
   
   app.get("/", (req, res) => {
-  res.send("BEN BOT IS ALIVE ✅");
+  res.send("KHAN MD STARTED ✅");
   });
   app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
   setTimeout(() => {

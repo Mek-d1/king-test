@@ -1,12 +1,17 @@
 {
   "name": "BEN-BOT",
-  "version": "1.0.0",
-  "description": "A WhatsApp Bot Created By Nothing",
+  "version": "0.0.1",
+  "description": "Ben Is a Simple WA Bot Using Library Baileys",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name BEN-BOT",
+    "start": "pm2 start set.js --name BEN-BOT",
     "stop": "pm2 stop BEN-BOT",
     "restart": "pm2 restart BEN-BOT"
+  },
+  "keywords": [
+    "whiskeysockets",
+    "multi-device""
   },
   "dependencies": {
     "@whiskeysockets/baileys": "6.7.9",

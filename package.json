@@ -11,7 +11,7 @@
   },
   "keywords": [
     "whiskeysockets",
-    "multi-device""
+    "multi-device"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "6.7.9",

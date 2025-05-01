@@ -12,7 +12,7 @@
   "keywords": [
     "whiskeysockets",
     "multi-device"
-  },
+  ],
   "dependencies": {
     "@whiskeysockets/baileys": "6.7.9",
     "@adiwajshing/keyed-db": "^0.2.4",

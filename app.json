@@ -9,7 +9,7 @@
   "env": {
     "SESSION_ID": {
       "description": "Put the session-id here.",
-      "required": false,
+      "required": true,
       "value": ""
     },  
     

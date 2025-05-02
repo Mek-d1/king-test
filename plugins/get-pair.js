@@ -5,7 +5,7 @@ cmd({
     pattern: "pair",
     alias: ["getpair", "clonebot"],
     react: "✅",
-    desc: "Get pairing code for KHAN-MD bot",
+    desc: "Get pairing code for BEN-BOT bot",
     category: "download",
     use: ".pair +923477868XXX",
     filename: __filename
@@ -16,18 +16,18 @@ cmd({
         
         // Validate phone number format
         if (!phoneNumber || !phoneNumber.match(/^\+?\d{10,15}$/)) {
-            return await reply("❌ Please provide a valid phone number with country code\nExample: .pair +923427582XXX");
+            return await reply("❌ Please provide a valid phone number with country code\nExample: .pair +937427582XXX");
         }
 
         // Make API request to get pairing code
-        const response = await axios.get(`https://khanxmd.onrender.com/pair?phone=${encodeURIComponent(phoneNumber)}`);
+        const response = await axios.get(`https://benbot-pairweb.onrender.com/pair?phone=${encodeURIComponent(phoneNumber)}`);
         
         if (!response.data || !response.data.code) {
             return await reply("❌ Failed to retrieve pairing code. Please try again later.");
         }
 
         const pairingCode = response.data.code;
-        const doneMessage = "> *KHAN-MD PAIRING COMPLETED*";
+        const doneMessage = "> *BEN-BOT PAIRING COMPLETED*";
 
         // Send initial message with formatting
         await reply(`${doneMessage}\n\n*Your pairing code is:* ${pairingCode}`);
@@ -49,7 +49,7 @@ cmd({
     pattern: "pair2",
     alias: ["getpair2", "clonebot2"],
     react: "✅",
-    desc: "Get pairing code for KHAN-MD bot",
+    desc: "Get pairing code for BEN-BOT bot",
     category: "download",
     use: ".pair +923427582XXX",
     filename: __filename
@@ -60,18 +60,18 @@ cmd({
         
         // Validate phone number format
         if (!phoneNumber || !phoneNumber.match(/^\+?\d{10,15}$/)) {
-            return await reply("❌ Please provide a valid phone number with country code\nExample: .pair +923427582XXX");
+            return await reply("❌ Please provide a valid phone number with country code\nExample: .pair +937427582XXX");
         }
 
         // Make API request to get pairing code
-        const response = await axios.get(`https://jawadxmd.onrender.com/pair?phone=${encodeURIComponent(phoneNumber)}`);
+        const response = await axios.get(`https://benbot-pairweb.onrender.com/pair?phone=${encodeURIComponent(phoneNumber)}`);
         
         if (!response.data || !response.data.code) {
             return await reply("❌ Failed to retrieve pairing code. Please try again later.");
         }
 
         const pairingCode = response.data.code;
-        const doneMessage = "> *KHAN-MD PAIRING COMPLETED*";
+        const doneMessage = "> *BEN-BOT PAIRING COMPLETED*";
 
         // Send initial message with formatting
         await reply(`${doneMessage}\n\n*Your pairing code is:* ${pairingCode}`);
